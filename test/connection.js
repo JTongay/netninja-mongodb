@@ -15,3 +15,12 @@ before((done)=>{
     console.log('Connection error:', err);
   })
 })
+
+//Drop the characters collection before each test
+beforeEach((done)=>{
+  //Drop the collection
+  //Mongoose pluralizes your model which should be singular
+  mongoose.connection.collections.mariochars.drop(()=>{
+    done();
+  })
+})
