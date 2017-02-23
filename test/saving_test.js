@@ -10,9 +10,18 @@ describe('Saving Records', function () {
      weight: 60
    })
 
+   var Luigi = new MarioChar({
+     name: 'Luigi',
+     weight: 80
+   })
+
    char.save().then(()=>{
      assert(char.isNew === false);
-     done();
+   })
+
+   Luigi.save().then(()=>{
+     assert(Luigi.isNew === false);
+     done()
    })
 
 
