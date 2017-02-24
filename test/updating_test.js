@@ -28,4 +28,16 @@ describe('Updating Records', function () {
 
  })
 
+ it('should increment the weight by one', function (done) {
+
+  MarioChar.update({}, {$inc: {weight: 1}}).then(()=>{
+    MarioChar.findOne({name: 'Mario'}).then((res)=>{
+      assert(res.weight === 61)
+      done();
+    })
+  })
+
+ })
+
+
 })

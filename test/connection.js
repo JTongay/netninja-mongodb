@@ -23,4 +23,5 @@ beforeEach((done)=>{
   mongoose.connection.collections.mariochars.drop(()=>{
     done();
   })
+
 })

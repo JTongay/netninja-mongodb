@@ -20,3 +20,6 @@ Updating Records
   - char.update()
   - MarioChar.update()
   - MarioChar.findOneAndUpdate() - Again, this finds the first and updates it
+
+Relational Data
+  - 
