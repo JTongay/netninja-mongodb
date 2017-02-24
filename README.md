@@ -10,3 +10,13 @@ Mongo Methods for finding
   - find(criteria)
   - findOne(criteria)
   - use these methods on the models themselves, unlike the save() method
+
+Deleting Records
+  - char.remove()
+  - MarioChar.remove()
+  - MarioChar.findOneAndRemove() - This finds the first one and removes it
+
+Updating Records
+  - char.update()
+  - MarioChar.update()
+  - MarioChar.findOneAndUpdate() - Again, this finds the first and updates it
